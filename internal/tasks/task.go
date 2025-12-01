@@ -1,3 +1,4 @@
+// Package tasks provides a simple task management system.
 package tasks
 
 import (
@@ -25,7 +26,7 @@ func NewTask(id int, description string) Task {
 	}
 }
 
-func Toggle(t *Task) {
+func (t *Task) Toggle() {
 	t.Completed = !t.Completed
 }
 
