@@ -18,4 +18,5 @@ func Execute() {
 func init() {
 	rootCmd.AddCommand(addTaskCmd)
 	rootCmd.AddCommand(listTasksCmd)
+	rootCmd.AddCommand(tuiCmd)
 }

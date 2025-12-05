@@ -57,5 +57,7 @@ func SaveTasks(path string, entries []Task) error {
 			return err
 		}
 	}
+	// TODO: persist completed status
+
 	return writer.Flush()
 }
